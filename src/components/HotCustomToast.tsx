@@ -14,7 +14,7 @@ export function HotCustomToast() {
     "bottom-left",
     "bottom-center",
     "bottom-right",
-  ]
+  ];
 
   const onClick = () => {
     // 커스텀 토스트의 경우 기본 스타일이 적용되지 않는다.
