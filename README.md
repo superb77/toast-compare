@@ -18,13 +18,13 @@
     
     가장 기본적으로 토스트를 생성할 수 있는 방법입니다. 
     
-    ```jsx
+    ```javascript
     const onClick = () => toast('Wow so easy !');
     ```
     
     `toast` 함수에 두 번째 인자로 추가 옵션을 넣을 수 있습니다.
     
-    ```jsx
+    ```javascript
     toast('Hello World', {
       duration: 4000,
       position: 'top-center',
@@ -56,7 +56,7 @@
         
         - `toast.remove`
             
-            ```jsx
+            ```javascript
             toast.dismiss();
             ```
             
@@ -64,7 +64,7 @@
             
         - `toast.dismiss`
             
-            ```jsx
+            ```javascript
             toast.remove(toastId); // 특정 ID를 가지고 있는 토스트 삭제
             
             // or
@@ -77,7 +77,7 @@
         
         따라서 스택되지 않아야 하는 경우 아래와 같이 사용될 수 있을 것 같습니다.
         
-        ```jsx
+        ```javascript
         const onClick = () => { 
           toast.remove(); 
           
@@ -93,7 +93,7 @@
         
         `toast` 내에 콜백을 넣어 커스텀 할 수 있는 것으로 보입니다.
         
-        ```jsx
+        ```javascript
         // custom with default style
         toast(
           (t) => (
@@ -137,7 +137,7 @@
     - 토스트에 호버시 일시중지 기능 제공
     - 만료된 토스트에 대해서 자동 삭제
     
-    ```jsx
+    ```javascript
     import { useToaster } from 'react-hot-toast/headless';
     
     const Notifications = () => {
@@ -196,7 +196,7 @@
 
 기본적으로 `toast()` 가 반환하는 것은 해당 토스트의 Id로 보입니다.
 
-```jsx
+```javascript
 toast(
 	message: Message, 
 	opts?: Partial<Pick<Toast, "id" | "icon" | "duration" | "ariaProps" | "className" | "style" | "position" | "iconTheme">> | undefined
@@ -212,7 +212,7 @@ toast(
 
 사용성은 `react-hot-toast` 와 거의 동일하다고 생각합니다. 이도 같이 `toast` 라는 함수를 호출하여 토스트를 생성할 수 있습니다.
 
-```tsx
+```javascript
 type Position = "top-right" | "top-center"| "top-left" | "bottom-right"|  "bottom-center" | "bottom-left";
 
 ...
@@ -229,7 +229,7 @@ const onClick = () => {
 
 - **삭제**
     
-    ```tsx
+    ```javascript
     import React from 'react';
     import { toast } from 'react-toastify';
     
@@ -257,7 +257,7 @@ const onClick = () => {
     
     우선 toastify의 스타일을 사용하기 위해서는 라이브러리 자체 CSS를 `import` 해와야 합니다.
     
-    ```tsx
+    ```javascript
     import "react-toastify/dist/ReactToastify.css";
     ```
     
@@ -268,7 +268,7 @@ const onClick = () => {
 
 이 또한 `toast()` 가 해당 토스트의 Id를 반환합니다.
 
-```tsx
+```javascript
 toast<unknown>(
 	content: ToastContent<unknown>, 
 	options?: ToastOptions<{}> | undefined
