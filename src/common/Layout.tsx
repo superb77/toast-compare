@@ -1,4 +1,4 @@
-import { Top, Button } from 'components';
+import { Top, FooterBtn } from 'common';
 
 interface Props {
   title: string;
@@ -14,7 +14,7 @@ export function Layout({ title, path, children }: Props) {
         {children}
       </div>
       <div className="flex flex-col items-center">
-        <Button path={path} />
+        <FooterBtn path={path} />
       </div> 
     </div>
   )

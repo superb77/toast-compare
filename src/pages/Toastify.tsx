@@ -1,4 +1,4 @@
-import { Layout } from 'components';
+import { Layout } from 'common';
 
 export function Toastify() {
   return (

@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 
-export function Button({ path }: { path: string }) { 
+export function FooterBtn({ path }: { path: string }) { 
   const navigate = useNavigate();
 
   const onClick = () => navigate(`/${path}`);
