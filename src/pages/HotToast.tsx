@@ -1,6 +1,6 @@
 import { Toaster } from 'react-hot-toast';
 import { Layout } from 'common';
-import { HotStatusToast, HotCustomToast } from 'components';
+import { HotStatusToast, HotCustomToast, HotDismissToast } from 'components';
 
 
 export function HotToast() {
@@ -9,6 +9,7 @@ export function HotToast() {
       <div className="w-full h-full flex flex-col">
         <HotStatusToast />
         <HotCustomToast />
+        <HotDismissToast />
       </div>
       <Toaster />
     </Layout>

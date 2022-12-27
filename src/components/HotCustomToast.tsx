@@ -26,7 +26,7 @@ export function HotCustomToast() {
         >
           <p className="font-bold">Custom Toast</p>
           <p className="text-sm">With some description</p>
-          <button className="text-blue-300" onClick={() => toast.dismiss(t.id)}>Dismiss</button>
+          <button className="text-blue-300" onClick={() => toast.remove(t.id)}>Dismiss</button>
         </div>
       ),
       {
