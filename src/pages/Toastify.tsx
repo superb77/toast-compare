@@ -1,6 +1,6 @@
 import { ToastContainer } from 'react-toastify';
 import { Layout } from 'common';
-import { TostifyStatusToast, TostifyCustomToast } from 'components'; 
+import { TostifyStatusToast, TostifyCustomToast, TostifyDismissToast } from 'components'; 
 import "react-toastify/dist/ReactToastify.css";
 
 
@@ -11,6 +11,7 @@ export function Toastify() {
       <div className="w-full h-full flex flex-col">
         <TostifyStatusToast />
         <TostifyCustomToast />
+        <TostifyDismissToast />
       </div>
       <ToastContainer />
     </Layout>

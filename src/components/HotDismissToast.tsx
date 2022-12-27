@@ -11,7 +11,7 @@ export function HotDismissToast() {
     if (prevToastId) toast.remove(prevToastId); 
     
     // 토스트 아이디를 반환합니다.
-    let toastId = toast('Wow so easy !', {
+    const toastId = toast('Wow so easy !', {
       duration: 3000,
       icon: '🦄',
     });
