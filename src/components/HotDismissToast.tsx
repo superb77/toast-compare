@@ -1,22 +1,18 @@
-import { useState } from 'react';
 import { Button } from 'common';
 import toast, { useToaster } from 'react-hot-toast/headless';
 
 export function HotDismissToast() {
-  const [prevToastId, setPrevToastId] = useState<string>("");
   const { toasts } = useToaster();
   
 
   const onClick = () => { 
-    if (prevToastId) toast.remove(prevToastId); 
+    toast.remove(); 
     
     // 토스트 아이디를 반환합니다.
-    const toastId = toast('Wow so easy !', {
-      duration: 3000,
+    toast('Wow so easy !', {
+      duration: 1000,
       icon: '🦄',
     });
-
-    setPrevToastId(toastId);
   }
 
   return (
