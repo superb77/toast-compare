@@ -1,6 +1,6 @@
 import { Toaster } from 'react-hot-toast';
 import { Layout } from 'common';
-import { StatusToast } from 'components';
+import { StatusToast, CustomToast } from 'components';
 
 
 export function HotToast() {
@@ -8,6 +8,7 @@ export function HotToast() {
     <Layout title="react-hot-toast" path="toastify">
       <div className="w-full h-full flex flex-col">
         <StatusToast />
+        <CustomToast />
       </div>
       <Toaster />
     </Layout>
