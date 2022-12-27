@@ -4,7 +4,7 @@ import { Button, SelectBox } from 'common';
 
 type Position = "top-left" | "top-center" | "top-right" | "bottom-left" | "bottom-center" | "bottom-right";
 
-export function CustomToast() {
+export function HotCustomToast() {
   const [position, setPosition] = useState<Position>("top-left");
 
   const options = [

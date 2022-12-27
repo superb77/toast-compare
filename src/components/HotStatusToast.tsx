@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Button, SelectBox } from 'common';
 import toast from 'react-hot-toast';
 
-export function StatusToast() {
+export function HotStatusToast() {
   const [status, setStatus] = useState<string>("");
 
   const options = [
